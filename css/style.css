@@ -8,7 +8,7 @@
 }
 
 *{box-sizing: border-box;}
-html,body{height:100vh;}
+html,body{height:100vh;overflow:hidden;}
 body{
 	width:100vw;
 	margin:0;
@@ -55,4 +55,7 @@ h1{
 .snowflake{
 	width:100px !important;
 	height:100px !important;
+}
+@media (max-width: 1000px ){
+	h1 {font-size:60pt;}
 }
