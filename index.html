@@ -8,7 +8,7 @@
 	<meta name="theme-color" content="#A62122" />
 	<meta property="og:title" content="Σούλι" />
 	<meta property="og:description" content="Το Σούλι είναι ιστορική και γεωγραφική περιοχή της Κεντρικής Ηπείρου, που το αποτελούν ένα σύνολο (αναφέρεται και ως «ομοσπονδία») χωριών, γνωστών ως Σουλιωτοχώρια." />
-	<meta property="og:image" content="/preview.png" />
+	<meta property="og:image" content="/thumb.png" />
 	<link rel="shortcut icon" href="/favicon.ico"  type="image/x-icon" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="https://use.typekit.net/brm4gje.css">
@@ -19,6 +19,8 @@
 	</div>
 	<h1><span id="message"></span><span id="month"></span> <span id="day"></span></h1>
 
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+
 <script>
 var d = new Date();
 var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
@@ -26,9 +28,17 @@ document.getElementById("month").innerHTML = months[d.getMonth()];
 document.getElementById("day").innerHTML = d.getDate();
 if(d.getMonth() == 10 && d.getDate() == 7){
 	document.getElementById("message").innerHTML = 'Happy Birthday!!<br />'
+	var sf = new Snowflakes({
+        color: "#808000",
+        count: 85,
+        speed: 3,
+        minOpacity: 1,
+        minSize: 12
+    });
 } else{
 	document.getElementById("message").innerHTML = 'You are not ready.<br />'
 }
 </script>
+
 </body>
 </html>

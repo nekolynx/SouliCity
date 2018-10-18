@@ -40,7 +40,7 @@ h1{
     font-weight: 900;
     text-transform: uppercase;
     color: red;
-    max-width: 515px;
+    max-width: 725px; /*515px;*/
     width: 90%;
     overflow-wrap: break-word;
     animation: fade;
@@ -48,4 +48,11 @@ h1{
     animation-delay: 600ms;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
+}
+.snowflake .snowflake__inner:before {
+    background-image: url(../FiddleGif.gif) !important;
+}
+.snowflake{
+	width:100px !important;
+	height:100px !important;
 }
